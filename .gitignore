@@ -13,6 +13,13 @@ target/
 .springBeans
 .sts4-cache
 
+# Exclude MySQL socket file and other non-essential files
+docker/mysql/data/mysql.sock
+docker/mysql/data/*.pid
+docker/mysql/data/*.log
+docker/mysql/data/*.err
+
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
